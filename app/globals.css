@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --secondary: #10b981;
+    --secondary-foreground: #ffffff;
+    --accent: #8b5cf6;
+    --accent-foreground: #ffffff;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #3b82f6;
+  }
+
+  .dark {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --card: #1e293b;
+    --card-foreground: #f8fafc;
+    --primary: #60a5fa;
+    --primary-foreground: #0f172a;
+    --secondary: #34d399;
+    --secondary-foreground: #0f172a;
+    --accent: #a78bfa;
+    --accent-foreground: #0f172a;
+    --muted: #334155;
+    --muted-foreground: #94a3b8;
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #60a5fa;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .nav-container {
+    @apply bg-background border-b border-border transition-colors duration-300;
+  }
+
+  .nav-link {
+    @apply relative text-foreground text-opacity-80 hover:text-foreground transition-colors duration-300 px-3 py-2;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-primary via-secondary to-accent transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .card {
+    @apply bg-card text-card-foreground border border-border transition-colors duration-300;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-foreground text-opacity-80 mb-1;
+  }
+
+  .project-card {
+    @apply bg-card text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .button-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300;
+  }
+
+  .button-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .bg-nav {
+    @apply bg-white/80 dark:bg-gray-950/80 backdrop-blur-md;
+  }
+
+  .bg-nav-transparent {
+    @apply bg-white/50 dark:bg-gray-950/50 backdrop-blur-sm;
+  }
+
+  .text-opacity-80 {
+    opacity: 0.8;
+  }
+}
+
+.glass-effect {
+  @apply bg-white/70 dark:bg-gray-950/70 backdrop-blur-lg;
+}
+
+.project-card-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+.prose .anchor {
+  @apply invisible absolute no-underline;
+  margin-left: -1em;
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible;
+}
+
+.prose a {
+  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+}
+
+.prose .anchor:after {
+  @apply text-neutral-300 dark:text-neutral-700;
+  content: "#";
+}
+
+.prose *:hover > .anchor {
+  @apply visible;
+}
+
+/* Add more utility classes as needed */
