@@ -25,10 +25,10 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-4">Let's Connect!</h3>
+            <h3 className="text-2xl font-bold mb-4">Let&apos;s Connect!</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              I'm currently looking for new opportunities. Whether you have a
-              question or just want to say hi, I'll try my best to get back to you!
+              I&apos;m currently looking for new opportunities. Whether you have a
+              question or just want to say hi, I&apos;ll try my best to get back to you!
             </p>
             <div className="flex space-x-4">
               <Link

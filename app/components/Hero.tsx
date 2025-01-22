@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+//import Link from "next/link";
 import { HiArrowDown } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { images } from '@/app/config/images'

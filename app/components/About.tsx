@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+//import Image from 'next/image';
 import { HiAcademicCap, HiCode } from "react-icons/hi"
 
 const EDUCATION = [
@@ -46,7 +46,7 @@ export default function About() {
               I am KWIZERA Olivier, a passionate software developer with a strong focus on creating innovative and efficient solutions. My journey in technology started with a deep curiosity about how things work, which led me to pursue software development.
             </p>
             <p className="text-gray-600 dark:text-gray-300">
-              Currently specializing in full-stack development, I combine creativity with technical expertise to build engaging and functional applications. I'm constantly learning and adapting to new technologies to stay at the forefront of development practices.
+              Currently specializing in full-stack development, I combine creativity with technical expertise to build engaging and functional applications. I&apos;m constantly learning and adapting to new technologies to stay at the forefront of development practices.
             </p>
           </motion.div>
 
