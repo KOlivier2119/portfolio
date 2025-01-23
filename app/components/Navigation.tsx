@@ -53,7 +53,7 @@ export default function Navigation() {
                 <motion.a
                   key={item.label}
                   href={item.page}
-                  className="nav-link"
+                  className="nav-link text-white"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

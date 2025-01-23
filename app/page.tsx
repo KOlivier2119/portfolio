@@ -23,7 +23,7 @@ export default function Home() {
     <motion.main 
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
-      className="bg-gradient-to-b from-[#0a192f] to-[#112240] text-gray-100 min-h-screen"
+      className="bg-gradient-to-b from-[#0a192f] to-[#112240] text-gray-100 min-h-screen h-full"
     >
       <Navigation />
       <div className="relative">

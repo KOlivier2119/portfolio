@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FiMail, FiSend } from "react-icons/fi";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 
 export default function Contact() {
@@ -32,24 +32,24 @@ export default function Contact() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="mailto:your.email@example.com"
+                href="mailto:kwizeraolivier2119@gmail.com"
                 className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               >
                 <FiMail size={20} />
               </Link>
               <Link
-                href="https://github.com/yourusername"
+                href="https://github.com/KOlivier2119"
                 target="_blank"
                 className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               >
                 <BsGithub size={20} />
               </Link>
               <Link
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.instagram.com/k_o.l.i.v.i.e.r/"
                 target="_blank"
                 className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               >
-                <BsLinkedin size={20} />
+                <BsInstagram size={20} />
               </Link>
             </div>
           </motion.div>

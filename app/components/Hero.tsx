@@ -5,6 +5,7 @@ import Image from "next/image";
 import { HiArrowDown } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { images } from '@/app/config/images'
+import image from '../../public/OLIVIER.webp';
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -22,8 +23,8 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src={images.profile}
-              alt="Your Profile Image"
+              src={image}
+              alt="KWIZERA Olivier"
               width={300}
               height={300}
               className="rounded-full shadow-2xl"
