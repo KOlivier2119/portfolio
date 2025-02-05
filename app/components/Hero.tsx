@@ -4,7 +4,7 @@ import Image from "next/image";
 //import Link from "next/link";
 import { HiArrowDown } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { images } from '@/app/config/images'
+//import { images } from '@/app/config/images'
 import image from '../../public/OLIVIER.webp';
 
 export default function Hero() {
@@ -15,7 +15,7 @@ export default function Hero() {
 
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
+      <div className="flex flex-col text-center items-center justify-center py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
