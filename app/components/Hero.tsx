@@ -43,7 +43,7 @@ export default function Hero() {
               <span className="font-semibold text-primary">
                 Full Stack Developer{" "}
               </span>
-              based in Your Location. Working towards creating software that makes life easier and more meaningful.
+              based in Rwanda. Working towards creating software that makes life easier and more meaningful.
             </p>
             <button
               onClick={() => scrollToSection('projects')}
